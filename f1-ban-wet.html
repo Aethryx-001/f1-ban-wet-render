@@ -192,7 +192,8 @@ svg{width:86cqw;height:auto;opacity:0;overflow:visible}
     bar.style.width = (clamp(t / TOTAL) * 100) + '%';
     cues.forEach(function(c){ if (t >= c.t && !c._d){ c._d = 1; sfx(c.f); } });
   }
-
+  window.renderAt = render;
+  
   function tick(now){
     if (!playing) return;
     var t = (now - startTime) / 1000;
