@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ban wet F1: kok bisa nempel?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --page:#dfe6f0; --bg:#f5f8fc; --ink:#0d1b2e; --water:#1b8cff; --soft:#5b6b82; --hl:#e10600;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--page:#06101c}}
+:root[data-theme="dark"]{--page:#06101c}
+html{scroll-padding-top:env(safe-area-inset-top,0px);height:100%}
+*{box-sizing:border-box;margin:0}
+body{height:100%;background:var(--page);display:flex;align-items:center;justify-content:center;
+  font-family:"Outfit","Arial Black",Impact,sans-serif;overflow:hidden}
+#stage{position:relative;height:min(100%,calc(100vw*16/9));aspect-ratio:9/16;background:var(--bg);color:var(--ink);
+  container-type:inline-size;overflow:hidden;font-weight:800;touch-action:manipulation}
+.scene{position:absolute;inset:0;display:none;flex-direction:column;justify-content:center;align-items:center;
+  padding:0 7cqw;text-align:center;gap:4cqw}
+.w{display:inline-block;opacity:0;margin:0 1.4cqw}
+.big{font-size:17cqw;line-height:1.02;letter-spacing:-.02em}
+.mid{font-size:10cqw;line-height:1.1;letter-spacing:-.01em}
+.soft{color:var(--soft);font-weight:500;font-size:5.6cqw;line-height:1.3}
+.hl{color:var(--hl)}
+.wt{color:var(--water)}
+svg{width:86cqw;height:auto;opacity:0;overflow:visible}
+.num{font-size:44cqw;line-height:.9;color:var(--water);letter-spacing:-.04em;font-variant-numeric:tabular-nums;opacity:0}
+.track{width:76cqw;height:6cqw;border-radius:9cqw;background:#dbe4ef;overflow:hidden;opacity:0}
+#gf{height:100%;width:0;background:var(--water);border-radius:9cqw}
+.pill{opacity:0;background:var(--ink);color:var(--bg);border-radius:99cqw;padding:3.4cqw 8cqw;font-size:6.2cqw}
+#bar{position:absolute;left:0;bottom:0;height:1.2cqw;background:var(--water);width:0}
+#cover{position:absolute;inset:0;background:var(--bg);display:flex;flex-direction:column;align-items:center;
+  justify-content:center;gap:5cqw;padding:0 10cqw;text-align:center;cursor:pointer;z-index:5}
+#cover b{font-size:12cqw;line-height:1.1}
+#cover span{font-weight:500;font-size:4.6cqw;color:var(--soft);line-height:1.4}
+#cover i{font-style:normal;background:var(--hl);color:#fff;border-radius:99cqw;padding:3cqw 8cqw;font-size:6cqw}
+</style>
+</head>
+<body>
+<div id="stage">
+
+  <div class="scene" data-s="0" data-e="4">
+    <div class="big"><span class="w" data-at=".1">Hujan</span><span class="w" data-at=".45">deras.</span></div>
+    <div class="big"><span class="w" data-at="1">Ban</span><span class="w" data-at="1.3">F1</span><span class="w hl" data-at="1.7">tetap nempel.</span></div>
+    <div class="soft"><span class="w" data-at="2.6">Kok bisa?</span></div>
+  </div>
+
+  <div class="scene" data-s="4" data-e="10">
+    <div class="soft"><span class="w" data-at=".1">Masalahnya</span></div>
+    <svg viewBox="0 0 400 300" data-at=".4" id="svgA">
+      <rect id="wA" x="0" y="226" width="400" height="24" fill="#1b8cff" opacity="0"/>
+      <g id="tA"><rect x="50" y="160" width="300" height="90" rx="20" fill="#0d1b2e"/></g>
+      <rect x="0" y="250" width="400" height="30" fill="#5b6b82"/>
+    </svg>
+    <div class="mid"><span class="w" data-at="1.6">Ban licin ngambang di atas air:</span><span class="w hl" data-at="3">aquaplaning</span></div>
+  </div>
+
+  <div class="scene" data-s="10" data-e="19">
+    <div class="soft"><span class="w" data-at=".1">Solusinya</span></div>
+    <svg viewBox="0 0 400 300" data-at=".4" id="svgB">
+      <rect x="30" y="150" width="340" height="40" rx="10" fill="#0d1b2e"/>
+      <g fill="#0d1b2e">
+        <rect x="30" y="190" width="64" height="60" rx="8"/><rect x="122" y="190" width="64" height="60" rx="8"/>
+        <rect x="214" y="190" width="64" height="60" rx="8"/><rect x="306" y="190" width="64" height="60" rx="8"/>
+      </g>
+      <rect x="0" y="244" width="400" height="6" fill="#1b8cff" opacity=".55"/>
+      <rect x="0" y="250" width="400" height="30" fill="#5b6b82"/>
+      <g id="drops" fill="#1b8cff"></g>
+      <text x="200" y="274" text-anchor="middle" font-size="18" font-weight="800" fill="#f5f8fc">alur</text>
+    </svg>
+    <div class="mid"><span class="w" data-at="1">Alur dalam</span><span class="w wt" data-at="1.5">menyalurkan air</span><span class="w" data-at="2.2">ke samping</span></div>
+  </div>
+
+  <div class="scene" data-s="19" data-e="26">
+    <div class="soft"><span class="w" data-at=".1">Ban full wet bisa membuang sekitar</span></div>
+    <div class="num" id="count" data-at=".4">0</div>
+    <div class="mid"><span class="w" data-at="1">liter air per detik</span></div>
+    <div class="soft"><span class="w" data-at="2.8">di kecepatan sekitar 300 km/jam</span></div>
+  </div>
+
+  <div class="scene" data-s="26" data-e="31">
+    <div class="soft"><span class="w" data-at=".1">Satu lagi</span></div>
+    <div class="mid"><span class="w" data-at=".4">Karetnya</span><span class="w hl" data-at=".8">lebih lunak</span></div>
+    <div class="track" data-at="1.3"><div id="gf"></div></div>
+    <div class="soft"><span class="w" data-at="2.4">Tetap lentur dan menggigit di aspal basah yang dingin</span></div>
+  </div>
+
+  <div class="scene" data-s="31" data-e="35" data-last="1">
+    <div class="soft"><span class="w" data-at=".1">Next</span></div>
+    <div class="big"><span class="w hl" data-at=".4">Part 2:</span></div>
+    <div class="big"><span class="w" data-at=".9">ban soft</span></div>
+    <div class="pill" data-at="1.7">Follow biar nggak kelewat</div>
+  </div>
+
+  <div id="bar"></div>
+  <div id="cover">
+    <b id="ct">Ban wet F1</b>
+    <span id="cs">Nyalakan screen record dan suara HP dulu, lalu ketuk layar ini untuk mulai.</span>
+    <i id="cb">Mulai</i>
+  </div>
+</div>
+
+<script>
+(function(){
+  var TOTAL = 35, FADE = .25;
+  var scenes = [].slice.call(document.querySelectorAll('.scene'));
+  var count = document.getElementById('count'), gf = document.getElementById('gf');
+  var bar = document.getElementById('bar'), cover = document.getElementById('cover');
+  var tA = document.getElementById('tA'), wA = document.getElementById('wA');
+  var dropsG = document.getElementById('drops');
+  var startTime = 0, playing = false, AC = null;
+  var cues = [{t:22.1,f:'ding'},{t:32.7,f:'ding'}];
+
+  var drops = [];
+  for (var i = 0; i < 9; i++){
+    var c = document.createElementNS('http://www.w3.org/2000/svg','circle');
+    c.setAttribute('r','5'); dropsG.appendChild(c);
+    drops.push({el:c, j:i%3, ph:i/9});
+  }
+
+  function clamp(x){ return Math.max(0, Math.min(1, x)); }
+  function ease(x){ return 1 - Math.pow(1 - x, 3); }
+  function lerp(a,b,k){ return a + (b - a) * k; }
+
+  // Suara dibuat dari kode (Web Audio), tanpa file audio.
+  function tone(f, d, v, slide){
+    if (!AC) return;
+    var o = AC.createOscillator(), g = AC.createGain(), n = AC.currentTime;
+    o.type = 'sine'; o.frequency.setValueAtTime(f, n);
+    if (slide) o.frequency.exponentialRampToValueAtTime(slide, n + d);
+    g.gain.setValueAtTime(v, n); g.gain.exponentialRampToValueAtTime(.0001, n + d);
+    o.connect(g); g.connect(AC.destination); o.start(n); o.stop(n + d);
+  }
+  function sfx(k){
+    if (!AC) return;
+    if (k === 'pop') tone(620, .09, .09, 340);
+    if (k === 'ding'){ tone(988, .7, .12); tone(1480, .9, .07); }
+    if (k === 'whoosh'){
+      var len = AC.sampleRate * .5, buf = AC.createBuffer(1, len, AC.sampleRate), d = buf.getChannelData(0);
+      for (var i = 0; i < len; i++) d[i] = (Math.random() * 2 - 1) * (1 - i / len);
+      var s = AC.createBufferSource(), f = AC.createBiquadFilter(), g = AC.createGain(), n = AC.currentTime;
+      s.buffer = buf; f.type = 'bandpass'; f.Q.value = 1.2;
+      f.frequency.setValueAtTime(300, n); f.frequency.exponentialRampToValueAtTime(2800, n + .45);
+      g.gain.setValueAtTime(.0001, n); g.gain.exponentialRampToValueAtTime(.14, n + .12); g.gain.exponentialRampToValueAtTime(.0001, n + .5);
+      s.connect(f); f.connect(g); g.connect(AC.destination); s.start(n);
+    }
+  }
+
+  function pop(el, p){
+    var e = ease(p);
+    el.style.opacity = e;
+    el.style.transform = 'translateY(' + ((1 - e) * 5) + 'cqw) scale(' + (.92 + .08 * e) + ')';
+  }
+
+  // Semua tampilan dihitung dari satu angka: waktu t (mirip Remotion).
+  function render(t){
+    scenes.forEach(function(sc){
+      var s = +sc.dataset.s, e = +sc.dataset.e;
+      if (t < s || t >= e){ sc.style.display = 'none'; return; }
+      sc.style.display = 'flex';
+      if (!sc._w){ sc._w = 1; sfx('whoosh'); }
+      var local = t - s;
+      sc.style.opacity = sc.dataset.last ? 1 : clamp((e - t) / FADE);
+      sc.querySelectorAll('[data-at]').forEach(function(el){
+        var p = clamp((local - (+el.dataset.at)) / .35);
+        pop(el, p);
+        if (p > 0 && !el._f){ el._f = 1; if (el.classList.contains('w')) sfx('pop'); }
+      });
+    });
+    // adegan 2: ban naik di atas air
+    var a = clamp((t - 4 - 1) / 2.2);
+    tA.setAttribute('transform', 'translate(0,' + (-ease(a) * 30) + ')');
+    wA.setAttribute('opacity', (.55 * ease(a)).toFixed(2));
+    // adegan 3: tetes air mengalir lewat alur
+    drops.forEach(function(d){
+      var u = (t * .55 + d.ph) % 1, bx = 62 + 92 * d.j, gx = 108 + 92 * d.j, x, y, op = 1;
+      if (u < .4){ var k = u / .4; x = lerp(bx, gx, ease(k)); y = lerp(246, 232, k); }
+      else { var k2 = (u - .4) / .6; x = gx; y = lerp(232, 192, k2); op = 1 - k2; }
+      d.el.setAttribute('cx', x); d.el.setAttribute('cy', y); d.el.setAttribute('opacity', op);
+    });
+    // adegan 4: hitung liter
+    count.textContent = Math.round(ease(clamp((t - 19 - .8) / 2.2)) * 85);
+    // adegan 5: bar grip
+    gf.style.width = (ease(clamp((t - 26 - 1.5) / 1.6)) * 100) + '%';
+    bar.style.width = (clamp(t / TOTAL) * 100) + '%';
+    cues.forEach(function(c){ if (t >= c.t && !c._d){ c._d = 1; sfx(c.f); } });
+  }
+
+  function tick(now){
+    if (!playing) return;
+    var t = (now - startTime) / 1000;
+    if (t >= TOTAL){ finish(); return; }
+    render(t);
+    requestAnimationFrame(tick);
+  }
+  function finish(){
+    playing = false;
+    document.getElementById('ct').textContent = 'Selesai';
+    document.getElementById('cs').textContent = 'Stop screen record, lalu ketuk untuk ulang.';
+    document.getElementById('cb').textContent = 'Ulang';
+    cover.style.display = 'flex';
+  }
+  function start(){
+    try {
+      AC = AC || new (window.AudioContext || window.webkitAudioContext)();
+      if (AC.state === 'suspended') AC.resume();
+    } catch (err) { AC = null; }
+    scenes.forEach(function(sc){ sc._w = 0; sc.querySelectorAll('[data-at]').forEach(function(el){ el._f = 0; }); });
+    cues.forEach(function(c){ c._d = 0; });
+    cover.style.display = 'none';
+    playing = true;
+    startTime = performance.now();
+    requestAnimationFrame(tick);
+  }
+  cover.addEventListener('click', start);
+  render(0);
+})();
+</script>
+</body>
+</html>
